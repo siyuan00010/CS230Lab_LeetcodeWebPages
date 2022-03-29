@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "leetcode-590a6"
+  },
+  "targets": {
+    "leetcode-590a6": {
+      "hosting": {
+        "LeetCode-project": [
+          "leetcode-590a6"
+        ]
+      }
+    }
+  }
+}

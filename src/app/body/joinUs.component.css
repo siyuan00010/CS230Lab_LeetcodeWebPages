@@ -1,0 +1,14 @@
+.img{
+    width: fit-content;
+    height: auto;
+    align-items: center;
+    position: relative;
+    color: grey;
+    margin: 20px;
+}
+.companies-showcase-base{
+    height: auto;
+}
+
+
+

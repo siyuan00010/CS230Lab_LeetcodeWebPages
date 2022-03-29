@@ -1,0 +1,36 @@
+.navbar{
+    height: auto;
+}
+.lc{
+    font-family: TypoRound,sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: white;
+}
+.navbar .nav-tabs{
+    transition: 0.4s all;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 8px;
+    text-align: right;
+    position: relative;
+}
+.nav-item{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    margin-right: 25px;
+    color: white;
+}
+.nav-prem{
+    color: #fea116;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    margin-right: 25px;
+}
+.nav-prem:hover{
+    color: #fea116;
+}

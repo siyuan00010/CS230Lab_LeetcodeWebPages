@@ -1,0 +1,19 @@
+.copyright{
+    font-size: 12px;
+    line-height: 22px;
+}
+ .nav.navbar{
+   width: 100%;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 22px;
+    margin-right: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(112, 110, 110);
+}
+.nav-item{
+  color:black;
+}

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <lc-header>Loading header</lc-header>
+</div>
+
+<div class="container text-center" style="width:50%; background-color: white;">
+
+<form #postForm="ngForm" (ngSubmit)="onUpdateUserInfo(postForm.value)">
+    <div class="lc-logo text-center">
+        <img src ={{imglc}} alt="logo" width="80" height="80">
+        <h5>LeetCode</h5>
+    </div>
+    <div class="mb-3 mt-3">
+      <input type="Username" class="form-control" id="Username" placeholder="Username" ngModel name="Username">
+    </div>
+    <div class="mb-3 mt-3">
+      <input type="password" class="form-control" id="pwd" placeholder="Password" ngModel name="psw">
+    </div>
+    <div class="mb-3 mt-3">
+        <input type="Confirm password" class="form-control" id="pwd" placeholder="Confirm Password" name="conf-pswd">
+      </div>
+      <div class="mb-3 mt-3">
+        <input type="E-mail address" class="form-control" id="Email" placeholder="E-mail address" ngModel name="Email">
+      </div>
+    <button type="signup" class="btn btn-primary">Sign Up</button>
+    <div class="form-bottom">
+      <p>
+        Have an account?
+        <a href="accounts/signin">Sign in</a>
+      </p>
+    </div>
+  </form> 
+</div>
+<div class="container-fluid">
+  <lc-footer>Loading footer</lc-footer>
+</div>

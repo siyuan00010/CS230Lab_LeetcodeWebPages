@@ -1,0 +1,31 @@
+.container-fluid-body{
+    width: 100%;
+}
+.top-base{
+    background-color: rgb(44, 41, 41);
+    height: 60px;
+}
+.d-flex-explore{
+    background-color: rgb(44, 41, 41);
+}
+.d-flex-problem{
+    background-color: rgb(240, 240, 238);
+    height: 414.5px;
+}
+.lc-questions{
+    width: 398px;
+}
+.lc-company{
+    width: 398px;
+}
+.lc-joinUs{
+    height: auto;
+}
+
+.bottom-base{
+    height: 82px;
+}
+.d-flex{
+    height: 400px;
+    text-align: right;
+}
