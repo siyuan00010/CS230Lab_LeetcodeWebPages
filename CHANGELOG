@@ -1,0 +1,4 @@
+LAB9
+A signup form is added for entering component information. (See signup component html)
+Added a service that send data to backend. (See edit userinfo ts)
+Use the service inside the form to send data to the backend. (See signup component ts)
