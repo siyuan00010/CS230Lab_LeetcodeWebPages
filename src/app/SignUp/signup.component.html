@@ -4,7 +4,7 @@
 
 <div class="container text-center" style="width:50%; background-color: white;">
 
-<form action="/action_page.php">
+  <form #postForm="ngForm" (ngSubmit)="onUpdateUserInfo(postForm.value)">
     <div class="lc-logo text-center">
         <img src ={{imglc}} alt="logo" width="80" height="80">
         <h5>LeetCode</h5>

@@ -6,6 +6,9 @@ import { Injectable } from "@angular/core";
     providedIn: 'root'
   })
   export class UserInfoService {
+      // modifyUserInfo(data: UserInfo) {
+      //     throw new Error("Method not implemented.");
+      // }
       private baseUrl:string = 'https://leetcode-590a6-default-rtdb.firebaseio.com/';
       private myInfoEndpoint: string = 'myinfo.json';
       constructor(private http:HttpClient){
@@ -15,7 +18,7 @@ import { Injectable } from "@angular/core";
           console.log(this.baseUrl+this.myInfoEndpoint);
           return this.http.get<UserInfo>(this.baseUrl+this.myInfoEndpoint);
       }  
-  //     modifyUserInfo(data:UserInfo){
-  //       return this.http.put(this.baseUrl+this.myInfoEndpoint, data);
-  // }
+      modifyUserInfo(data:UserInfo){
+        return this.http.put(this.baseUrl+this.myInfoEndpoint, data);
+  }
 }

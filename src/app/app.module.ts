@@ -8,6 +8,7 @@ import { environment } from '../environments/environment';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { provideRemoteConfig, getRemoteConfig } from '@angular/fire/remote-config';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LayoutMainComponent } from './layout_main/layout_main.component';
@@ -31,7 +32,7 @@ import { BusinessComponent } from './business/business.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ExploreCardComponent } from './body/explore-card/explore-card.component';
 import { jobsComponent } from './jobs/jobs.component';
-import { SignupComponent } from './SignUp/signup.compnent';
+import { SignupComponent } from './SignUp/signup.component';
 import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 
@@ -42,10 +43,11 @@ import { AuthenticationComponent } from './auth/authentication/authentication.co
     AngularFireDatabaseModule,
     AngularFireDatabase,
     AppRoutingModule,
-    HttpClientModule
-    //provideFirebaseApp(() => initializeApp(environment.firebase)),
-    // provideDatabase(() => getDatabase()),
-    // provideRemoteConfig(() => getRemoteConfig())
+    HttpClientModule,
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
+    provideRemoteConfig(() => getRemoteConfig())
   ],
   declarations: [
     UserInfoComponent,

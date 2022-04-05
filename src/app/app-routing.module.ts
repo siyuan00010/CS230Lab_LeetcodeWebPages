@@ -7,7 +7,7 @@ import { BusinessComponent } from './business/business.component';
 import { ExploreLayoutComponent } from "./explore-layout/explore-layout.component";
 import { jobsComponent } from './jobs/jobs.component';
 import { LayoutMainComponent } from './layout_main/layout_main.component';
-import { SignupComponent } from './SignUp/signup.compnent';
+import { SignupComponent } from './SignUp/signup.component';
 import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 const routes: Routes = [
