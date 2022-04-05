@@ -32,6 +32,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { ExploreCardComponent } from './body/explore-card/explore-card.component';
 import { jobsComponent } from './jobs/jobs.component';
 import { SignupComponent } from './SignUp/signup.compnent';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { SignupComponent } from './SignUp/signup.compnent';
     PriceComponent,
     developerComponent,
     BusinessComponent,
-    ExploreCardComponent
+    ExploreCardComponent,
+    AuthenticationComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

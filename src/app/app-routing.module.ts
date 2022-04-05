@@ -8,6 +8,7 @@ import { ExploreLayoutComponent } from "./explore-layout/explore-layout.componen
 import { jobsComponent } from './jobs/jobs.component';
 import { LayoutMainComponent } from './layout_main/layout_main.component';
 import { SignupComponent } from './SignUp/signup.compnent';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 const routes: Routes = [
   { path: '', component: LayoutMainComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'explore', component:ExploreLayoutComponent},
   { path: 'problemSet', component: ProblemSetComponent },
   { path: 'business/contact', component: BusinessComponent },
-  { path: 'jobs', component:jobsComponent}
+  { path: 'jobs', component:jobsComponent},
+  { path: 'authentication', component:AuthenticationComponent}
 ];
 
 @NgModule({
