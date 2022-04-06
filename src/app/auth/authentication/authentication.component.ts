@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { AuthenticationService } from './authentication.service';
 
 @Component({
   selector: 'lc-authentication',
@@ -7,12 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthenticationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth:AuthenticationService) { }
 
   ngOnInit(): void {
   }
-  onSubmit(data:any){
+  onSubmit(data:NgForm){
     console.log("Button clicked");
-    console.log(data);
+    console.log(data.value);
+
+    this.auth.signUp(data.value.email, data.value.password).subscribe(
+      data => {
+        console.log(data)
+      },
+      error => {
+        console.log(error)
+      }
+    )
   }
 }
