@@ -44,9 +44,6 @@ import { AuthenticationComponent } from './auth/authentication/authentication.co
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideDatabase(() => getDatabase()),
-    provideRemoteConfig(() => getRemoteConfig())
   ],
   declarations: [
     UserInfoComponent,
