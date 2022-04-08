@@ -9,14 +9,24 @@ import { ProductsService } from "./products.service";
     templateUrl: 'explore-layout.component.html',
 })
 export class ExploreLayoutComponent implements OnInit {
-
+    products: exploreCate[] = [];
     constructor(private productsService:ProductsService, private dbService:ProductsService) {
       dbService.showData();
 
     }
     ngOnInit(): void {
-
+        this.productsService.getProducts().subscribe((data: exploreCate[]) => {
+                    console.log("Fetching product data");
+                    console.log(data);
+                    for (var product of data) {
+                        console.log(product);
+                        this.products.push(product);
+                    }
+                
+            
+        })
     }
+}
 //data read using HttpClient
     // products: exploreCate[] = [];
     // constructor(private productsService: ProductsService) {
@@ -37,7 +47,6 @@ export class ExploreLayoutComponent implements OnInit {
 
     //     })
 
-    // }
+    // }}
 
 
-}
