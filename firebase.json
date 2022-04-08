@@ -1,16 +1,27 @@
 {
-  "hosting": {
+  "hosting": [
+    {
     "public": "dist/LeetCode-project",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
+    ]
+  },
+  {
+    
+      "target": "LeetCode-Project",
+      "public": "dist/LeetCode-project",
+      "ignore": [
+        "**/.*"
+      ]
+  }
+  ],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
       }
     ]
-  }
 }
+
