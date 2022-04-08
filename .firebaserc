@@ -5,7 +5,7 @@
   "targets": {
     "leetcode-590a6": {
       "hosting": {
-        "leetcode-app": [
+        "LeetCode-project": [
           "leetcode-590a6"
         ]
       }
