@@ -1,4 +1,7 @@
-<div class="container">
+<div class="container-fluid">
+    <lc-header>Loading header</lc-header>
+  </div>
+  <div class="container">
     <div class="row">
         <div class="col-6">
             <form #authForm="ngForm">
@@ -16,21 +19,24 @@
                     <input type="password" class="form-control" placeholder="Password" required password minlength="8">
                 </div>
 
-                <div class="input-Group">
+                <!-- <div class="input-Group">
                     <span class="input-Group-text">
                         Confirm Password
                     </span>
                     <input type="password" class="form-control" placeholder="Password" required password minlength="8">
-                </div>
+                </div> -->
 
-                <button class="btn" type="submit" [disabled]="!authForm.valid">
+                <button class="btn" type="submit" [disabled]="!authForm.valid" (click)= "buttonClicked='Login'">
                     Login
                 </button>
 
-                <button class="btn" type="submit" [disabled]="!authForm.valid">
+                <button class="btn" type="submit" [disabled]="!authForm.valid" (click)= "buttonClicked='Signup'">
                     Signup
                 </button>
             </form>
         </div>
     </div>
 </div>
+<div class="container-fluid">
+    <lc-footer>Loading footer</lc-footer>
+  </div>

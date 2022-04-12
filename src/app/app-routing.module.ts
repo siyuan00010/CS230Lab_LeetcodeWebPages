@@ -14,12 +14,11 @@ const routes: Routes = [
   { path: '', component: LayoutMainComponent},
   { path: 'subscribe', component: PremiumComponent },
   { path: 'accounts/signin', component: SigninComponent },
-  { path: 'accounts/signup', component: SignupComponent },
+  { path: 'accounts/signup', component: AuthenticationComponent },
   { path: 'explore', component:ExploreLayoutComponent},
   { path: 'problemSet', component: ProblemSetComponent },
   { path: 'business/contact', component: BusinessComponent },
   { path: 'jobs', component:jobsComponent},
-  { path: 'authentication', component:AuthenticationComponent}
 ];
 
 @NgModule({
