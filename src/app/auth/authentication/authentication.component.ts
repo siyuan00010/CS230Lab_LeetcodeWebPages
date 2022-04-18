@@ -32,7 +32,7 @@ export class AuthenticationComponent{
         console.log(error.error)
       }
     );
-    data.resetForm;
+    data.resetForm();
   }
   
 }
