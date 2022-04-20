@@ -20,6 +20,7 @@ export class AuthenticationService{
             "password": password,
             "returnSecureToken":true
         };
+        console.log('sign up')
         return this.http.post<authResponse>(this.baseUrl + ":" + this.SignUpEndPoint + "?" + "key=" + environment.firebase.apiKey, requestBody);
     }
     public Login(email:string,password:string){
