@@ -4,19 +4,19 @@
   <div class="container">
     <div class="row">
         <div class="col-6">
-            <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm.value)">
+            <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
                 <div class="input-Group">
                     <span class="input-Group-text">
                         Email
                     </span>
-                    <input type="text" class="form-control" placeholder="Email" required email>
+                    <input type="text" class="form-control" placeholder="Email" ngModel name="email" required email>
                 </div>
                 
                 <div class="input-Group">
                     <span class="input-Group-text">
                         Password
                     </span>
-                    <input type="password" class="form-control" placeholder="Password" required password minlength="8">
+                    <input type="password" class="form-control" placeholder="Password" gModel name="password" required password minlength="8">
                 </div>
 
                 <!-- <div class="input-Group">
